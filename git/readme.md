@@ -39,3 +39,11 @@ git merge dev   #在当前的分支上合并dev分支
 git remote 查看远程库的信息
 git remote add origin https://www.github.com/...     #关联一个远程库
 git push origin master  #把master分支推送到远程库对应的远程分支上
+
+
+
+git clone git@114.55.35.214:quotes.git
+
+
+回复本地删除的文件
+git checkout 文件名称
