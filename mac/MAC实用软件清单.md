@@ -6,6 +6,10 @@
 
 ![mac](http://images.apple.com/cn/macbook-pro/images/bsc_macbook_pro_large_2x.png)
 
+
+
+## 以下为部分软件
+
 + Typora  md文件编辑软件 所见所得模式
 + SourceTree git仓库管理软件 代码管理软件
 + Atom 文件编辑器 代码开发
@@ -18,6 +22,11 @@
 + MindNode Pro 思维导图软件
 + MacDown md文件编辑器 可以实时预览
 + Beyond Compare 代码比对软件
++ 后续...
+
+
+
+
 
 
 ![mac](http://images.apple.com/cn/macbook-pro/images/hero_large_2x.jpg)
