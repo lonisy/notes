@@ -42,7 +42,7 @@ git push origin master  #把master分支推送到远程库对应的远程分支�
 
 
 
-git clone git@114.55.35.214:quotes.git
+git clone git@114.55.35.000:quotes.git
 
 
 回复本地删除的文件
