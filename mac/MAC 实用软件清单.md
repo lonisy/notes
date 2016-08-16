@@ -4,7 +4,7 @@
 
 更新时间: 2016-08-16
 
-![mac](https://www.apple.com/ac/structured-data/images/open_graph_logo.png)
+![mac](http://images.apple.com/cn/macbook-pro/images/bsc_macbook_pro_large_2x.png)
 
 + Typora  md文件编辑软件 所见所得模式
 + SourceTree git仓库管理软件 代码管理软件
@@ -18,3 +18,6 @@
 + MindNode Pro 思维导图软件
 + MacDown md文件编辑器 可以实时预览
 + Beyond Compare 代码比对软件
+
+
+![mac](http://images.apple.com/cn/macbook-pro/images/hero_large_2x.jpg)
