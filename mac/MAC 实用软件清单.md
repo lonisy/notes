@@ -4,7 +4,7 @@
 
 更新时间: 2016-08-16
 
-![https://www.apple.com/ac/structured-data/images/open_graph_logo.png]()
+![mac](https://www.apple.com/ac/structured-data/images/open_graph_logo.png)
 
 + Typora  md文件编辑软件 所见所得模式
 + SourceTree git仓库管理软件 代码管理软件
