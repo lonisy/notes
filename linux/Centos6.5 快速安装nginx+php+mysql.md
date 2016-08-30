@@ -23,7 +23,7 @@ nginx, php5.6 php-fpm mysql5.6  phalcon扩展
 # 免除登录
 
 # 本地复制公钥到服务器
-scp .ssh/id_rsa.pub USER@IP:~/id_rsa.pub
+scp .ssh/id_rsa.pub USER@IP:~/id_rsa.pub 
 
 mkdir .ssh
 cat id_rsa.pub >> .ssh/authorized_keys
@@ -51,7 +51,6 @@ rm -rf /etc/yum.repos.d/nginx.repo
 yum -y install logrotate crontabs
 vim /etc/logrotate.d/nginx
 logrotate -f /etc/logrotate.d/nginx
-
 
 
 # 安装 MySQL5.6
@@ -96,7 +95,7 @@ service php-fpm start
 
 yum -y install php56w-pecl-memcache php56w-pecl-memcached php56w-pecl-redis
 
-# php56w-pecl-imagick.x86_64
+# php56w-pecl-imagick.x86_64 
 # php56w-pecl-imagick-devel.x86_64
 # php56w-pecl-memcache.x86_64
 # php56w-pecl-memcached.x86_64
@@ -136,6 +135,7 @@ service iptalbes status
 yum -y install iptables
 iptables -L -n
 iptables -P INPUT ACCEPT
+
 iptables -F
 iptables -X
 iptables -Z
