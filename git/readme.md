@@ -40,7 +40,7 @@ git remote 查看远程库的信息
 git remote add origin https://www.github.com/...     #关联一个远程库
 git push origin master  #把master分支推送到远程库对应的远程分支上
 
-
+git remote add origin https://github.com/lonisy/data-dictionary.git
 
 git clone git@114.55.35.000:quotes.git
 
