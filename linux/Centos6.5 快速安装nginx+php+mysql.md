@@ -1,3 +1,4 @@
+
 Centos6.5 快速安装nginx+php+mysql
 ========================================
 
@@ -128,6 +129,10 @@ chkconfig --level 3 php-fpm on
 service php-fpm start
 service mysqld start
 php --version
+
+# 安装 memcached
+yum -y install memcached
+chkconfig memcached on
 
 
 # 安装 iptalbes 防火墙

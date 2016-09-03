@@ -60,4 +60,10 @@ git clone git@112.124.108.15:wck.html.git
 $ git init
 $ git remote add origin git@192.168.5.10:uztapp.git
 $ git remote add origin git@www.lilei.org.cn:wck.html.git
+
+git@114.55.225.47:apiservice.git
+
+git remote add origin git@192.168.5.10:apiservice.git
+
+git remote set-url --add all git@192.168.5.10:apiservice.git
 ```
