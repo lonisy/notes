@@ -136,7 +136,7 @@ chkconfig memcached on
 
 
 # 安装 iptalbes 防火墙
-service iptalbes status
+service iptables status
 yum -y install iptables
 iptables -L -n
 iptables -P INPUT ACCEPT
