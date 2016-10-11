@@ -6,7 +6,7 @@ MAC OS X 使用笔记
 ##删除 .DS_store 文件
 ```
 Macintoshlocal:~ user$ find . -name ".DS_Store" -exec rm -rf {} \;
-# find . -name '.DS_Store' -delete
+Macintoshlocal:~ user$ find . -name '.DS_Store' -delete // 作用同上
 ```
 
 ##复制公钥到远程服务器
@@ -21,7 +21,7 @@ Macintoshlocal:~ user$ scp ~/.ssh/id_rsa.pub root@47.90.22.19:~/id_rsa.pub
 ```
 
 
-##ssh代理设置
+## ssh代理设置
 
 ```
 Macintoshlocal:~ user$ ssh -D 7070 root@47.90.22.19
@@ -41,4 +41,14 @@ java 61342 a 313u IPv6 0x1111111111111 0t0 TCP *:cslistener (LISTEN)
 Macintoshlocal:~ user$ sudo kill -9 61342
 ```
 
+## 重构右键打开方式,需要重启mac
+
+```
+/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo "Open With has been rebuilt, Finder will relaunch"
+```
+
+## MAC 设置开机启动项
+
+系统偏好设置>用户与群组>当前用户>登录项目
+点击加号 选在自己开机需要执行的命令
 
