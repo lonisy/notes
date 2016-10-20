@@ -24,7 +24,7 @@ nginx, php5.6 php-fpm mysql5.6  phalcon扩展
 # 免除登录
 
 # 本地复制公钥到服务器
-scp .ssh/id_rsa.pub USER@IP:~/id_rsa.pub 
+scp .ssh/id_rsa.pub USER@IP:~/id_rsa.pub
 
 mkdir .ssh
 cat id_rsa.pub >> .ssh/authorized_keys
@@ -73,6 +73,8 @@ baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/6/$basearch/
 enabled=0
 gpgcheck=1
 
+
+# 启动失败,考虑mysql 内存要求的问题 ,查看mysql日志
 yum -y install mysql-community-server
 service mysqld start
 /usr/bin/mysql_secure_installation
@@ -80,14 +82,12 @@ mysql -u root -p
 chkconfig --level 3 mysqld on
 rm -rf /etc/yum.repos.d/mysql-community.repo
 
+
+
 # 安装 php5.6
 yum list installed | grep php # 查看已安装的PHP相关软件
 rpm -Uvh http://mirror.webtatic.com/yum/el6/latest.rpm
 yum list php56* # 查看可以安装的软件列表
-
-yum -y install php56w.x86_64 php56w-cli.x86_64 php56w-common.x86_64 php56w-gd.x86_64 php56w-ldap.x86_64 php56w-mbstring.x86_64 php56w-mcrypt.x86_64 php56w-mysql.x86_64 php56w-pdo.x86_64 php56w-fpm
-
-yum -y install php56w-devel
 
 yum -y install php56w.x86_64 php56w-cli.x86_64 php56w-common.x86_64 php56w-gd.x86_64 php56w-ldap.x86_64 php56w-mbstring.x86_64 php56w-mcrypt.x86_64 php56w-mysql.x86_64 php56w-pdo.x86_64 php56w-fpm php56w-devel
 
@@ -96,15 +96,18 @@ service php-fpm start
 
 yum -y install php56w-pecl-memcache php56w-pecl-memcached php56w-pecl-redis
 
-# php56w-pecl-imagick.x86_64 
+#设置PHP时区
+
+# php56w-pecl-imagick.x86_64
 # php56w-pecl-imagick-devel.x86_64
 # php56w-pecl-memcache.x86_64
 # php56w-pecl-memcached.x86_64
 # php56w-pecl-redis.x86_64
 
 # 安装 phalcon 扩展
-yum -y install pcre-devel gcc make # 另需要提前安装 php-devel
+  yum -y install pcre-devel gcc make # 另需要提前安装 php-devel
 wget https://github.com/phalcon/cphalcon/archive/phalcon-v2.0.8.zip
+wget https://codeload.github.com/phalcon/cphalcon/zip/v3.0.0
 unzip phalcon-v2.0.8.zip
 cd cphalcon-phalcon-v2.0.8/build/
 ./install
@@ -125,15 +128,17 @@ vim /etc/nginx/conf.d/default.conf
 service nginx restart
 
 # 相关命令
-chkconfig --level 3 php-fpm on
 service php-fpm start
 service mysqld start
 php --version
 
 # 安装 memcached
 yum -y install memcached
-chkconfig memcached on
+chkconfig --level 3 memcached on
 
+# 安装 队列服务
+yum -y install beanstalkd
+chkconfig --level 3 beanstalkd on
 
 # 安装 iptalbes 防火墙
 service iptables status
