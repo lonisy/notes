@@ -1,3 +1,4 @@
+
 搭建Git服务器
 ============
 
@@ -33,7 +34,7 @@ $ sudo chown -R git:git uztapp.git
 ```
 
 - 禁用shell登录
-出于安全考虑，第二步创建的git用户不允许登录shell，这可以通过编辑/etc/passwd文件完成。找到类似下面的一行：
+  出于安全考虑，第二步创建的git用户不允许登录shell，这可以通过编辑/etc/passwd文件完成。找到类似下面的一行：
 
 ```
 git:x:1001:1001:,,,:/home/git:/bin/bash
@@ -43,7 +44,7 @@ git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell
 ```
 
 - 克隆远程仓库
-现在，可以通过git clone命令克隆远程仓库了，在各自的电脑上运行：
+  现在，可以通过git clone命令克隆远程仓库了，在各自的电脑上运行：
 
 ```
 $ git clone git@192.168.5.10:uztapp.git
@@ -52,10 +53,9 @@ Cloning into 'sample'...
 warning: You appear to have cloned an empty repository.
 
 git clone /home/git/quotes.git/ /data/quotes
-
 ```
 - 将本地的仓库和远程的仓库进行关联
-git clone git@112.124.108.15:wck.html.git
+  git clone git@112.124.108.15:wck.html.git
 ```
 $ git init
 $ git remote add origin git@192.168.5.10:uztapp.git
@@ -67,3 +67,14 @@ git remote add origin git@192.168.5.10:apiservice.git
 
 git remote set-url --add all git@192.168.5.10:apiservice.git
 ```
+
+
+* 初始建立一个bare repo
+
+$ git init --bare
+
+* 如果已有一个repo了，使用下面的方法将其转化为bare的
+
+$ git config --bool core.bare true 
+
+之后可删除除了repo根目录.git文件夹之外的所有文件，即只保留专用目录

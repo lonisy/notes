@@ -26,7 +26,7 @@ wget http://mirrors.163.com/.help/CentOS7-Base-163.repo
 调整epel源
 [epel]
 name=Extra Packages for Enterprise Linux 6 - $basearch
-#baseurl=http://download.fedoraproject.org/pub/epel/6/$basearch
+# baseurl=http://download.fedoraproject.org/pub/epel/6/$basearch
 mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-6&arch=$basearch
 failovermethod=priority
 enabled=1
@@ -35,7 +35,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
 
 [epel-debuginfo]
 name=Extra Packages for Enterprise Linux 6 - $basearch - Debug
-#baseurl=http://download.fedoraproject.org/pub/epel/6/$basearch/debug
+# baseurl=http://download.fedoraproject.org/pub/epel/6/$basearch/debug
 mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-debug-6&arch=$basearch
 failovermethod=priority
 enabled=0
@@ -44,7 +44,7 @@ gpgcheck=1
 
 [epel-source]
 name=Extra Packages for Enterprise Linux 6 - $basearch - Source
-#baseurl=http://download.fedoraproject.org/pub/epel/6/SRPMS
+# baseurl=http://download.fedoraproject.org/pub/epel/6/SRPMS
 mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-source-6&arch=$basearch
 failovermethod=priority
 enabled=0
@@ -56,7 +56,7 @@ gpgcheck=1
 
 [epel]
 name=Extra Packages for Enterprise Linux 7 - $basearch
-#baseurl=http://download.fedoraproject.org/pub/epel/7/$basearch
+# baseurl=http://download.fedoraproject.org/pub/epel/7/$basearch
 mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch
 failovermethod=priority
 enabled=1
@@ -64,7 +64,7 @@ gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 [epel-debuginfo]
 name=Extra Packages for Enterprise Linux 7 - $basearch - Debug
-#baseurl=http://download.fedoraproject.org/pub/epel/7/$basearch/debug
+# baseurl=http://download.fedoraproject.org/pub/epel/7/$basearch/debug
 mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-debug-7&arch=$basearch
 failovermethod=priority
 enabled=0
@@ -72,7 +72,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 gpgcheck=1
 [epel-source]
 name=Extra Packages for Enterprise Linux 7 - $basearch - Source
-#baseurl=http://download.fedoraproject.org/pub/epel/7/SRPMS
+# baseurl=http://download.fedoraproject.org/pub/epel/7/SRPMS
 mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-source-7&arch=$basearch
 failovermethod=priority
 enabled=0

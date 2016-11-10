@@ -9,7 +9,7 @@ config 中配置了两个远程仓库。想在终端下一句 git push 同时把
 1. 新的Git, Git 多了一项设置，使得你可以为一个 remote 设置多个 pushurl。
 
 ```
-git remote --set-url --add --push origin git@gitlab.com:root/XXX.git
+git remote set-url --add --push origin git@192.168.5.10:soho.git
 ```
 
 2. config 中配置`remote "origin"` 就变成类似如下的结构
