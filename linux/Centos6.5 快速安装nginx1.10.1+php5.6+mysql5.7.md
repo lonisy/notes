@@ -1,5 +1,11 @@
 # Centos6.5 安装 nginx mysql php 
 
+## 配置免密码登录
+
+```shell
+ssh root@ip 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
+```
+
 ## 安装 nginx
 
 ```
