@@ -22,3 +22,4 @@ git的全局配置，存储于$HOME/.gitconfig 里，这里的配置影响当前
 
 > git remote add origin https://github.com/lonisy/test.git
 > git push -u origin master
+
