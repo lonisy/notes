@@ -27,6 +27,8 @@ yum list php56*
 rpm -Uvh http://mirror.webtatic.com/yum/el6/latest.rpm  
 yum -y install php56w.x86_64 php56w-cli.x86_64 php56w-common.x86_64 php56w-gd.x86_64 php56w-ldap.x86_64 php56w-mbstring.x86_64 php56w-mcrypt.x86_64 php56w-mysql.x86_64 php56w-pdo.x86_64 php56w-fpm php56w-devel  
 yum -y install php56w-pecl-imagick php56w-pecl-imagick-devel  
+
+// Mysql连接多编码支持
 yum erase php56w-mysql -y
 yum -y install php56w-mysqlnd
 
