@@ -1,5 +1,5 @@
 
-## 复制本机
+## 概要
 ```shell
 ssh-keygen
 scp .ssh/idrsa.pub root@10.20.25.144:idrsa.pub
