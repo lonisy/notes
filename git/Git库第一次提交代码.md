@@ -12,14 +12,14 @@ git的全局配置，存储于$HOME/.gitconfig 里，这里的配置影响当前
 
 ## 创建git仓库
 
-> git init
-> git add .
-> git commit -m "first commit"
-> git remote add origin https://github.com/lonisy/test.git
-> git push -u origin master
+> git init   
+> git add .   
+> git commit -m "first commit"    
+> git remote add origin https://github.com/lonisy/test.git    
+> git push -u origin master   
 
 ## 如果已有项目
 
-> git remote add origin https://github.com/lonisy/test.git
-> git push -u origin master
+> git remote add origin https://github.com/lonisy/test.git    
+> git push -u origin master   
 
