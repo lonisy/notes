@@ -176,6 +176,28 @@ docker info
 ```
 
 
+## Docker-compose 使用
+
+#### 基本用法
+
+Compose是Docker的服务编排工具，主要用来构建基于Docker的复杂应用，Compose 通过一个配置文件来管理多个Docker容器，非常适合组合使用多个容器进行开发的场景。
+
+服务编排工具使得Docker应用管理更为方便快捷。 Compose网站：[https://docs.docker.com/compose/](https://docs.docker.com/compose/)
+
+[参考资料](http://www.cnblogs.com/52fhy/p/5991344.html)
+
+[参考资料](http://dockone.io/article/834)
+
+```
+$ docker-compose up  // 默认是前台运行并打印日志到控制台。
+$ docker-compose up -d // 后台运行
+$ docker-compose ps // 查看状态
+$ docker-compose stop // 停止服务
+$ docker-compose restart // 重启服务
+
+```
+
+
 
 ## Dockerfile 参考手册
 
