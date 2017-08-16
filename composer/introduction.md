@@ -1,8 +1,8 @@
 ## Composer 介绍
 编写日期: 2017-08-16
 
-[Composer 英文网站](https://getcomposer.org/)
-[Composer 中文网站](http://www.phpcomposer.com/)
+[Composer 英文网站](https://getcomposer.org/)      
+[Composer 中文网站](http://www.phpcomposer.com/)     
 
 ### 简介
 
@@ -143,15 +143,15 @@ YII 框架
 $ composer create-project yiisoft/yii2-app-basic basic 2.0.12          // 基础应用程序模板
 $ composer create-project yiisoft/yii2-app-advanced advanced 2.0.12    // 高级应用程序模板
 ```
+
 [参考资料](http://www.yiichina.com/download)
 
-
 Laravel 框架
-
 ```
 $ composer global require "laravel/installer"   // 全局安装 laravel 手脚架
 $ composer create-project --prefer-dist laravel/laravel blog  // 使用 composer 创建 laravel 项目
 ```
+
 [参考资料](https://laravel.com/docs/5.4)
 
 ### 其他

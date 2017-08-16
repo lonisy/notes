@@ -20,6 +20,8 @@ Git 是一款免费且开源的分布式版本关系系统, 可以敏捷高效�
 ### Git 常用命令
 
 ```shell
+$ git config --global user.name "lee"
+$ git config --global user.email lee@163.com
 $ git clone user@host:/path/project     # 克隆项目
 $ git status         # 查看状态
 $ git add <file>     # 建立跟踪
