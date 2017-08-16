@@ -49,6 +49,10 @@ C:\bin>php -r "readfile('https://getcomposer.org/installer');" | php
 
 [参考资料](https://pkg.phpcomposer.com/#how-to-use-packagist-mirror)
 
+[中国全量镜像地址](https://pkg.phpcomposer.com/)
+
+
+
 #### 全局配置
 系统全局配置： 即将配置信息添加到 Composer 的全局配置文件 config.json 中。
 
