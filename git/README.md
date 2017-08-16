@@ -7,8 +7,9 @@ Git 是一款免费且开源的分布式版本关系系统, 可以敏捷高效�
 
 1. 官方网站 https://git-scm.com/
 2. Github https://github.com/
-3. 码云 http://git.oschina.net/
-4. [Git 教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+3. Gitlab https://about.gitlab.com/
+4. 码云 http://git.oschina.net/
+5. [Git 教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
 
 ### Git 相关软件
