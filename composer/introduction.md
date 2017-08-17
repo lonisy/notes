@@ -2,7 +2,8 @@
 编写日期: 2017-08-16
 
 [Composer 英文网站](https://getcomposer.org/)      
-[Composer 中文网站](http://www.phpcomposer.com/)     
+[Composer 中文网站](http://www.phpcomposer.com/)  
+[国内镜像](https://pkg.phpcomposer.com/)
 
 ### 简介
 
@@ -140,10 +141,14 @@ $ composer dump-autoload --optimize // 部署到生产时 需要优化自动加�
 
 YII 框架
 ```
+$ php composer.phar global require "fxp/composer-asset-plugin:^1.2.0"  // 安装 Composer Asset Plugin 
+$ composer config --global --auth github-oauth.github.com 06c9250b9e5d97a1fbe4fb1b1966062d544fd545  // 设置 token
 $ composer create-project yiisoft/yii2-app-basic basic 2.0.12          // 基础应用程序模板
 $ composer create-project yiisoft/yii2-app-advanced advanced 2.0.12    // 高级应用程序模板
-```
 
+
+```
+[Composer Asset Plugin](https://github.com/fxpio/composer-asset-plugin)
 [参考资料](http://www.yiichina.com/download)
 
 Laravel 框架

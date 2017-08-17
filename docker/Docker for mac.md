@@ -4,6 +4,7 @@ Docker for mac
 
 参考文档[docker](https://docs.docker.com/docker-for-mac/)
 
+http://blog.csdn.net/chinapacs/article/details/41604983
 
 
 ## 版本检查
@@ -372,6 +373,29 @@ https://c.163.com/
 
 http://www.simapple.com/319.html
 
+
+## 镜像的导入/导出
+
+方法1: 使用 save/load 命令来实现镜像的导入导出
+
+```
+$ sudo docker save IMAGENAME | bzip2 -9 -c>img.tar.bz2
+```
+或者你喜欢 tar.gz
+```
+$ sudo docker save IMAGENAME > imageName.tar.gz
+```
+镜像导入功能使用 load 命令解压导入即可
+
+```
+$ sudo docker load < imageName.tar.gz
+```
+喜欢压缩的同学
+```
+$ bzip2 -d -c <img.tar.bz2 | sudo docker load
+```
+方法2： push/pull 将 image 文件推送到Docker Hub上去。这种方法类似于 git。你可以在 Docker Hub 上建立自己的公有或者私有库，适用于远程分享。缺点是，有时 image 文件特别大，需要考虑网络带宽问题。
+方法3： 搭建自己的私服repository，将 image 提交到私服，适用于企业网络。
 
 
 ## 网易蜂巢
