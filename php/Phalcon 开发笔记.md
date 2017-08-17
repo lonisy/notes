@@ -22,3 +22,11 @@ $this->response->send();
 
 建议1: 根据路由写过滤条件,或者转换方式
 建议2: 控制器尽量用一个单词标示,或者多个单词均为小写标示
+
+
+
+### model 中关联表的用法
+$account->getStockContestInfo();  获取相关模型的信息
+
+### $this->flash->success(); 的用法
+输出是在目标模板中使用 {{ content() }}

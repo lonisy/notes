@@ -49,8 +49,10 @@ $ git push origin master    # 把master分支推送到远程库对应的远程�
 ```shell
 $ cat ~/.gitconfig   # 用户目录下面的配置文件
 $ .git/config        # 项目 git 配置文件
-$ .git/hooks         # 钩子文件夹
+$ .git/hooks         # 钩子文件夹, git 特定事件触发后调用程序的目录
 $ .gitignore         # 项目中忽略配置文件
+$ .gitkeep           # Git会忽略空的文件夹, 如果你想版本控制包括空文件夹,根据惯例会在空文件夹下放置 .gitkeep 文件
+
 ```
 
 ### 专用名词 
