@@ -403,3 +403,11 @@ $ bzip2 -d -c <img.tar.bz2 | sudo docker load
 
 
 docker pull hub.c.163.com/library/nginx:1.12.0-alpine
+
+
+## 使用阿里云镜像加速
++ 找到加速地址
++ 配置到 docker 配置中
+
+https://www.cnblogs.com/zhxshseu/p/5970a5a763c8fe2b01cd2eb63a8622b2.html
+
